@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>E-Commerce | Home</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="./index.html" class="logo">
+          <img src="./assets/images/header/logo.png" alt="" />
+          <h3>Северяночка</h3>
+        </a>
+
+        <div class="catalog-modal">
+          <i class="bx bx-menu"></i>
+          <a href="./categories.html">Каталог</a>
+        </div>
+
+        <div class="search-navbar">
+          <input type="text" placeholder="Найти товар" />
+          <!-- <i class="bx bx-search"></i> -->
+        </div>
+
+        <div class="navbar-icons">
+          <a href="#">
+            <i class="bx bx-heart"></i>
+            <p>Избранное</p>
+          </a>
+          <a href="./products.html">
+            <i class="bx bx-box"></i>
+            <p>Продукты</p>
+          </a>
+          <a href="/cart.html">
+            <i class="bx bx-cart">
+              <span class="badge count-cart bg-danger">0</span></i
+            >
+
+            <p>Корзина</p>
+          </a>
+          <a href="#" id="toggle-dark-mode">
+            <i class="bx bxs-moon"></i>
+            <p>Dark</p>
+          </a>
+        </div>
+
+        <select class="control-option">
+          <option value="login">Abdulaziz</option>
+          <option value="login">Setting</option>
+          <option value="login">Log Out</option>
+        </select>
+      </nav>
+    </header>
+
+    <main>
+      <div class="catalogs">
+        <div class="catalogs-modal"></div>
+      </div>
+      <section class="herro">
+        <div class="container herro-wrapper">
+          <img src="./assets/images/home/herro.png" alt="" />
+          <h2>Доставка бесплатно от 1000 ₽</h2>
+        </div>
+      </section>
+      <section class="discount">
+        <div class="discount-wrapper container">
+          <div class="discount-wrapper-header">
+            <h3>Акции</h3>
+
+            <a href="./products.html">Все продукты </a>
+          </div>
+
+          <div class="discount-list gap-3"></div>
+        </div>
+      </section>
+
+      <section class="new-product">
+        <div class="new-product-wrapper container">
+          <div class="new-product-wrapper-header">
+            <h3>Новинки</h3>
+
+            <a href="./products.html">Все продукты </a>
+          </div>
+
+          <div class="new-product-list gap-3"></div>
+        </div>
+      </section>
+      <section class="popular-product">
+        <div class="popular-product-wrapper container">
+          <div class="popular-product-wrapper-header">
+            <h3>Покупали раньше</h3>
+
+            <a href="./products.html">Все продукты </a>
+          </div>
+
+          <div class="popular-product-list gap-3"></div>
+        </div>
+      </section>
+
+      <section class="container advert">
+        <h2>Специальные предложения</h2>
+
+        <div class="advert-cards"></div>
+      </section>
+
+      <section class="container location">
+        <h2>Наши магазины</h2>
+
+        <div class="location-wrapper">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                п.Щельяюр
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                д.Вертеп
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                с.Краснобор
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="disabled-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#disabled-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="disabled-tab-pane"
+                aria-selected="false"
+              >
+                д.Диюр
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home-tab-pane"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37494223.23909493!2d103!3d55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x453c569a896724fb%3A0x1409fdf86611f613!2sRussia!5e0!3m2!1sen!2s!4v1733649018538!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile-tab-pane"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46830151.11795828!2d-119.8093025!3d44.24236485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2s!4v1733649065188!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact-tab-pane"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.25298617416!2d69.2793667!3d41.28259745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent!5e0!3m2!1sen!2s!4v1733649151874!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="disabled-tab-pane"
+              role="tabpanel"
+              aria-labelledby="disabled-tab"
+              tabindex="0"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577317.9718771386!2d37.3855235!3d55.58202595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2sMoscow%2C%20Russia!5e0!3m2!1sen!2s!4v1733649191468!5m2!1sen!2s"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container articles">
+        <div class="articles-header">
+          <h2>Статьи</h2>
+          <a href="#">Все статьи-></a>
+        </div>
+
+        <div class="articles-cards"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer">
+        <img src="./assets/images/home/footer-logo.png" alt="" />
+        <a href="#">О компании</a>
+        <a href="#">Контакты</a>
+        <a href="#">Вакансии</a>
+        <a href="#">Статьи</a>
+        <a href="#">Политика обработки персональных данных</a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-facebook-square"></i></a>
+        <a href="#"><i class="bx bxl-ok-ru"></i></a>
+        <a href="#"><i class="bx bxl-wordpress"></i></a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+
+    <script src="./js/categories-data.js"></script>
+    <script src="./js/categories.js"></script>
+    <script src="./js/products-data.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

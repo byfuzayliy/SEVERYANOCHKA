@@ -1,0 +1,45 @@
+.product-container {
+  .product-wrapper {
+    .product-wrapper-card {
+      h1 {
+        /* Desc/Header/S */
+        color: rgb(65, 65, 65);
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+      }
+      .cards-star {
+        color: rgb(65, 65, 65);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+        text-decoration-line: underline;
+      }
+
+      .indecators {
+        display: flex;
+
+        .main-indecator {
+          object-fit: cover;
+          width: 500px;
+        }
+
+        .indecators-images {
+          display: flex;
+          flex-direction: column;
+          width: 100px;
+
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

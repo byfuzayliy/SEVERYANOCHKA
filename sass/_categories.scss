@@ -1,0 +1,211 @@
+.catalog-list {
+  h2 {
+    /* Desc/Header/XL */
+    color: rgb(65, 65, 65);
+    font-family: Rubik;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .catalog-list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .category-card {
+      position: relative;
+      //   z-index: -1;
+      h3 {
+        position: absolute;
+        z-index: 1;
+        bottom: 10px;
+        /* Desc/Text-Bold/M */
+        color: rgb(255, 255, 255);
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: left;
+        left: 10px;
+      }
+    }
+  }
+
+  .category-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Gradient balandligi */
+    background: linear-gradient(
+      180deg,
+      rgba(112, 192, 91, 0),
+      rgb(112, 192, 91) 82.813%
+    );
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  .category-card:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Gradient balandligi */
+    background: linear-gradient(
+      180deg,
+      rgba(255, 102, 51, 0),
+      rgb(255, 102, 51) 100%
+    );
+  }
+}
+
+@media screen and ((min-width: 768px) and (max-width:1000px)) {
+  .catalog-list {
+    h2 {
+      /* Desc/Header/XL */
+      color: rgb(65, 65, 65);
+      font-family: Rubik;
+      font-size: 54px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    .catalog-list-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .category-card {
+        margin: 0 auto;
+        position: relative;
+        width: 350px;
+
+        img {
+          width: 100%;
+        }
+        //   z-index: -1;
+        h3 {
+          position: absolute;
+          z-index: 1;
+          bottom: 10px;
+          /* Desc/Text-Bold/M */
+          color: rgb(255, 255, 255);
+          font-family: Rubik;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: left;
+          left: 10px;
+        }
+      }
+    }
+
+    .category-card::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%; /* Gradient balandligi */
+      background: linear-gradient(
+        180deg,
+        rgba(112, 192, 91, 0),
+        rgb(112, 192, 91) 82.813%
+      );
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .category-card:hover::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%; /* Gradient balandligi */
+      background: linear-gradient(
+        180deg,
+        rgba(255, 102, 51, 0),
+        rgb(255, 102, 51) 100%
+      );
+    }
+  }
+}
+
+@media screen and ((min-width: 375px) and (max-width:768px)) {
+  .catalog-list {
+    h2 {
+      /* Desc/Header/XL */
+      color: rgb(65, 65, 65);
+      font-family: Rubik;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+    .catalog-list-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .category-card {
+        margin: 0 auto;
+        position: relative;
+        width: 350px;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+        //   z-index: -1;
+        h3 {
+          position: absolute;
+          z-index: 1;
+          bottom: 10px;
+          /* Desc/Text-Bold/M */
+          color: rgb(255, 255, 255);
+          font-family: Rubik;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 150%;
+          letter-spacing: 0%;
+          text-align: left;
+          left: 10px;
+        }
+      }
+    }
+
+    .category-card::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%; /* Gradient balandligi */
+      background: linear-gradient(
+        180deg,
+        rgba(112, 192, 91, 0),
+        rgb(112, 192, 91) 82.813%
+      );
+      transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .category-card:hover::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%; /* Gradient balandligi */
+      background: linear-gradient(
+        180deg,
+        rgba(255, 102, 51, 0),
+        rgb(255, 102, 51) 100%
+      );
+    }
+  }
+}
